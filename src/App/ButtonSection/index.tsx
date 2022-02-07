@@ -1,7 +1,4 @@
-import { Button, Grid, Typography } from "@mui/material";
-import TextField from "@mui/material/TextField";
-import { Box } from "@mui/system";
-import { useEffect, useState } from "react";
+import { Button, Grid } from "@mui/material";
 import useStore from "../store";
 
 const numbers: Array<Number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
@@ -47,6 +44,7 @@ function ButtonSection() {
           ))}
           <Grid item xs={4}>
             <Button
+              onClick={() => appendValue(".")}
               disabled={processing}
               variant="outlined"
               size="large"

@@ -30,6 +30,7 @@ const useStore = create<MyState>(
       appendValue: (value) => {
         set((prev) => {
           prev.value += value;
+          prev.error = false;
         });
       },
       backspace: () => {
@@ -44,6 +45,7 @@ const useStore = create<MyState>(
       updateValue: (value) => {
         set((prev) => {
           prev.value = value;
+          prev.error = false;
         });
       },
       infixOperatorClicked: async (operator) => {

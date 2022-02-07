@@ -4,8 +4,8 @@ import {
   CssBaseline,
   Grid,
   ThemeProvider,
-  Typography,
 } from "@mui/material";
+
 import ButtonSection from "./ButtonSection";
 import CalculatorSelector from "./CalculatorSelector";
 

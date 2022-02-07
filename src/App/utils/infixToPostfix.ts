@@ -28,7 +28,6 @@ export function infixToPostfix(infix: string | any[]) {
   while (st.length !== 0) {
     result += ` ${st.pop()}`;
     console.log(result);
-
   }
 
   return result;

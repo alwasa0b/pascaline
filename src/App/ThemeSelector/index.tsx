@@ -5,9 +5,9 @@ import {
   Radio,
   RadioGroup,
 } from "@mui/material";
+
 import { Box } from "@mui/system";
 import useStore from "../store";
-import { SubscriptionType } from "../store/types";
 
 function ThemeSelector() {
   const subscription = useStore((state) => state.subscription);
