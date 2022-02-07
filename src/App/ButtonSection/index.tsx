@@ -42,19 +42,7 @@ function ButtonSection() {
               </Button>
             </Grid>
           ))}
-          <Grid item xs={4}>
-            <Button
-              onClick={() => appendValue(".")}
-              disabled={processing}
-              variant="outlined"
-              size="large"
-              sx={{ borderRadius: 3 }}
-              fullWidth
-            >
-              {`.`}
-            </Button>
-          </Grid>
-          <Grid item xs={4}>
+          <Grid item xs={8}>
             <Button
               disabled={processing}
               variant="outlined"
