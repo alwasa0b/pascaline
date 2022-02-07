@@ -53,7 +53,7 @@ export async function calculate(value: string) {
   const instanceProcessingPower =
     (profile.state.subscription === SubscriptionType.Gold ||
     profile.state.subscription === SubscriptionType.Premium
-      ? Number(calculatedValue[0]) * profile.state.subscription
+      ? Number(calculatedValue[0]) * 5000 * profile.state.subscription
       : 0) * Math.random();
 
   await timeout(
