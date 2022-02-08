@@ -17,6 +17,8 @@ function MainScreen() {
   const error = useStore((state) => state.error);
 
   const calculate = useStore((state) => state.calculate);
+  const calculatorType = useStore((state) => state.calculatorType);
+
 
   const [processingMessage, setProcessingMessage] = useState("");
 
@@ -52,11 +54,11 @@ function MainScreen() {
 
   useEffect(() => {
     if (error) {
-      setProcessingMessage("not a valid postfix");
+      setProcessingMessage(`not a valid ${calculatorType}`);
     } else {
       setProcessingMessage("");
     }
-  }, [error]);
+  }, [error, calculatorType]);
 
   const updateValue = useStore((state) => state.updateValue);
   const updatePointer = useStore((state) => state.updatePointer);
